@@ -21,7 +21,7 @@
                 "${workspaceFolder}\\data-struct\\includes",     //修改
                 "-o",
                 // "${fileDirname}\\${fileBasenameNoExtension}.exe"
-                "${workspaceFolder}\\make\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\make\\${fileBasenameNoExtension}.exe" // 没有该路径下的文件,则新建该文件,并且也证明了确实工作路径的真正意思
             ],
             "options": {
                 "cwd": "${fileDirname}"

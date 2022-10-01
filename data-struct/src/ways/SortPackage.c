@@ -1,5 +1,14 @@
 #include "SortPackage.h"
+#include <stddef.h>
 
+void swap(int *a , int *b )
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+    return;
+}
 
 int Partition(int A[],int low,int high)
 {
@@ -10,15 +19,23 @@ int Partition(int A[],int low,int high)
         {
             --high;
         }
-        A[low] = A[high];
-        while( low < high && A[high] <= pivot) ++ low;
-        A[high] = A[low]; 
+        // if(A[high] < pivot) swap(A[low],A[high]);  注意,A[number]为数值, A + number才是指针的移动
+        //  if(A[high] < pivot) swap(A + low,A + high);  //正确的
+        A[low] = A[high];//费位的极致利用
+        while( low < high && A[low] < pivot)
+        {
+            ++low;
+        }
+        // if(A[low] >= pivot)swap(A[high],A[low]);
+        // if(A[low] >= pivot)swap(A + high,A + low);
+        A[high] = A[low];
         
     }
         A[low] = pivot;
         return low;
     
 }
+
 void QuickSort(int A[],int low , int high)
 {
     if (low < high)
