@@ -46,3 +46,12 @@ void QuickSort(int A[],int low , int high)
     }
     return;
 }
+
+//用栈代替递归
+//退出条件, 一次工作需要的函数和操作, 一次工作需要保存的数据 ,有点像深度优先
+// 对一个操作,生成的两组数保存到栈里,存两个单位
+// 
+void QuickSort2(int A[] , int low , int high)
+{
+    return;
+}
