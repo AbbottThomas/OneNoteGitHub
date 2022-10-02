@@ -14,7 +14,9 @@
                 // "${workspaceFolder}\\src\\ways\\*.c",   //正确的
                 // "${workspaceFolder}\\data-struct\\src\\*.c",   // 起作用的是最外面的.vscode,运行C++时,屏幕掉main.c
                 "${workspaceFolder}\\data-struct\\src\\ways\\*.c",   //正确的
+                "${workspaceFolder}\\data-struct\\src\\ways\\*.cpp",   //正确的
                 "${workspaceFolder}\\data-struct\\src\\test\\*.c",   //正确的
+                "${workspaceFolder}\\data-struct\\src\\test\\*.cpp",   //正确的
                 "${workspaceFolder}\\data-struct\\src\\*.cpp",   // 运行的是main.cpp
                 // "${workspaceFolder}\\data-struct\\src\\ways\\*.cpp",   //目前没有,先屏蔽
 
