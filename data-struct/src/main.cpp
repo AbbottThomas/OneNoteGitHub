@@ -20,22 +20,40 @@ void test_mystack()
 
 }
 
+void test_qucik_sort_by_stack()
+{
+    int A[10] = {5,3,1,4,2,0,6,9,7,8}; 
+
+    stack<quick_sort_work> temp_workspace_deque;
+    temp_workspace_deque.emplace(0,9);
+    while (!temp_workspace_deque.empty())
+    {
+        quick_sort_work work = temp_workspace_deque.top();
+        qucik_sort_by_stack(A,temp_workspace_deque);
+        
+    }
+     
+    // QuickSort(A,0,9);
+    cout<<"测试A: ";
+    for (int i = 0; i < 10; i++)
+    {
+        cout<<A[i]<<" ";
+    }
+    cout<<endl;
+    
+}
 
 int main()
 {
     // cout <<"Hello World!\n";
-    int A[10] = {2,3,1,4,5,0,6,9,7,8}; 
     hihi();
     hihiCplus(); 
     test_includes();
     // test_mystack();
-    stack<quick_sort_work> temp_workspace_deque;
-    temp_workspace_deque.emplace(0,9);
-    quick_sort_work temp_work = temp_workspace_deque.top();
-    cout<<"low: "<< temp_work.low << " high: "<< temp_work.high<<endl;
-    // stack<quick_sort_work,list<quick_sort_work>> temp_workspace_list; 
-    quick_sort_work work = temp_workspace_deque.top();
-    qucik_sort_by_stack(A,work);
+    test_qucik_sort_by_stack();
+    
+
+
 
     return 0;
 }

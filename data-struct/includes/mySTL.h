@@ -25,7 +25,8 @@ struct quick_sort_work
     quick_sort_work(int x, int y):low(x),high(y){}
 };
 
-void qucik_sort_by_stack(int A[],quick_sort_work work);
+// void qucik_sort_by_stack(int A[],quick_sort_work work);
+void qucik_sort_by_stack(int A[],stack<quick_sort_work>& work_quque);
 
 
 

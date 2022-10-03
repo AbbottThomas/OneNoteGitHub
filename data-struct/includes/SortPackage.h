@@ -6,9 +6,10 @@
 extern "C"{
 #endif
 int Partition(int A[],int low,int high);
+void QuickSort(int A[],int low , int high);   
 #ifdef _cplusplus
 }
 #endif
-void QuickSort(int A[],int low , int high);
+// void QuickSort(int A[],int low , int high);   
 
 #endif
