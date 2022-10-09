@@ -13,18 +13,18 @@
                 // "${workspaceFolder}\\src\\*.c",   //正确的
                 // "${workspaceFolder}\\src\\ways\\*.c",   //正确的
                 // "${workspaceFolder}\\data-struct\\src\\*.c",   // 起作用的是最外面的.vscode,运行C++时,屏幕掉main.c
-                "${workspaceFolder}\\data-struct\\src\\ways\\*.c",   //正确的
-                "${workspaceFolder}\\data-struct\\src\\ways\\*.cpp",   //正确的
-                "${workspaceFolder}\\data-struct\\src\\test\\*.c",   //正确的
-                "${workspaceFolder}\\data-struct\\src\\test\\*.cpp",   //正确的
-                "${workspaceFolder}\\data-struct\\src\\*.cpp",   // 运行的是main.cpp
+                "${workspaceFolder}\\data-struct-and-algorithm\\src\\ways\\*.c",   //正确的
+                "${workspaceFolder}\\data-struct-and-algorithm\\src\\ways\\*.cpp",   //正确的
+                "${workspaceFolder}\\data-struct-and-algorithm\\src\\test\\*.c",   //正确的
+                "${workspaceFolder}\\data-struct-and-algorithm\\src\\test\\*.cpp",   //正确的
+                "${workspaceFolder}\\data-struct-and-algorithm\\src\\*.cpp",   // 运行的是main.cpp
                 // "${workspaceFolder}\\data-struct\\src\\ways\\*.cpp",   //目前没有,先屏蔽
 
                 // "${workspaceFolder}\\**",
                 // "${file}","${workspaceFolder}\\test.c",   //注意,不能重复添加
                 "-I",
                 // "${workspaceFolder}\\includes",     //添加后,在用"/includes/xxx.h和 xxxx.h都是对的,cpp_c里的没有用"
-                "${workspaceFolder}\\data-struct\\includes",     //修改
+                "${workspaceFolder}\\data-struct-and-algorithm\\includes",     //修改
                 "-o",
                 // "${fileDirname}\\${fileBasenameNoExtension}.exe"
                 "${workspaceFolder}\\make\\${fileBasenameNoExtension}.exe" // 没有该路径下的文件,则新建该文件,并且也证明了确实工作路径的真正意思
